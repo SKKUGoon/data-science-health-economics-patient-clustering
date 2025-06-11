@@ -16,11 +16,10 @@
 
 ## How to start
 
-1. Weaviate 로 벡터데이터베이스를 변환함. 벡터데이터베이스를 설치해야 코드를 사용할 수 있음
-2. `docker compose up -d` 라고 입력한다. 혹은 `docker-compose up -d`
-  - Weaviate의 클라이언트가 시작됨
-3. `data/20250512` 폴더를 만들고, 그 안에 하나이비인후과가 준 최신 데이터를 이름을 바꾸지 않고, xlsx 파일만 전부다 삽입.
-4. 프로젝트 루트에 `.env` 파일 생성
+1. `docker compose up -d` 라고 입력한다. 혹은 `docker-compose up -d`
+  - Qdrant 벡터 데이터베이스가 시작됨
+2. `data/20250512` 폴더를 만들고, 그 안에 하나이비인후과가 준 최신 데이터를 이름을 바꾸지 않고, xlsx 파일만 전부다 삽입.
+3. 프로젝트 루트에 `.env` 파일 생성
 
     ```BASH
     OPENAI_API_KEY=sk-proj-...

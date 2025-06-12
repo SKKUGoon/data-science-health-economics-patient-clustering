@@ -16,3 +16,5 @@ qdrant_storage/*
 
 *.snapshot
 *.env
+*.xls
+*.png

@@ -28,10 +28,15 @@ Chaining these two models together yields accurate, data-driven predictions of h
 
 ```mermaid
 flowchart LR
-    A[Historical Patient Visits - Time Series] --> B[XGBoost Time Series Model]
-    B --> C[Predicted Future Visits]
-    C --> D[XGBoost Cross Sectional Model]
-    D --> E[Predicted Consumer Goods Usage]
+    A[Historical Patient Visits] --> B[Embedding]
+    B --> C[UMAP]
+    C --> D[HDBSCAN]
+    D --> E[Meta Cluster]
+    E --> F[Patient Cluster Wise time series]
+    F --> G[XGBoost Time Series Prediction]
+    F --> H[XGBoost Cross Sectional with Consumer Goods Usage]
+    H --> I[Predicted Consumer Goods Usage]
+    G --> I[Predicted Consumer Goods Usage]
 ```
 
 ## 📊 Data & Features

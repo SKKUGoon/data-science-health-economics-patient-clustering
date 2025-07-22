@@ -28,9 +28,9 @@ Chaining these two models together yields accurate, data-driven predictions of h
 
 ```mermaid
 flowchart LR
-    A[Historical Patient Visits (Time Series)] --> B[XGBoost Time-Series Model]
+    A[Historical Patient Visits - Time Series] --> B[XGBoost Time Series Model]
     B --> C[Predicted Future Visits]
-    C --> D[XGBoost Cross-Sectional Model]
+    C --> D[XGBoost Cross Sectional Model]
     D --> E[Predicted Consumer Goods Usage]
 ```
 

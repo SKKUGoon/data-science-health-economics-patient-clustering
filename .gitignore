@@ -13,6 +13,7 @@ wheels/
 
 settings/*
 qdrant_storage/*
+data/*
 
 *.snapshot
 *.env
